@@ -5,7 +5,7 @@
     "codespaces": {
       "openFiles": [
         "README.md",
-        "Mukul Bandewar_TASK_1/app.py"
+        "Mukul_Bandewar_TASK_1/app.py"
       ]
     },
     "vscode": {
@@ -16,9 +16,9 @@
       ]
     }
   },
-  "updateContentCommand": "pip install -r 'Mukul Bandewar_TASK_1/requirements.txt' && pip install streamlit",
+  "updateContentCommand": "pip install -r 'Mukul_Bandewar_TASK_1/requirements.txt' && pip install streamlit",
   "postAttachCommand": {
-    "server": "streamlit run 'Mukul Bandewar_TASK_1/app.py' --server.address 0.0.0.0"
+    "server": "streamlit run 'Mukul_Bandewar_TASK_1/app.py' --server.address 0.0.0.0"
   },
   "portsAttributes": {
     "8501": {
