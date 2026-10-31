@@ -185,15 +185,24 @@ with metrics_tab:
         text = f"{value:.1%}" if key != "roc_auc" else f"{value:.3f}"
         col.metric(label, text)
 
-    st.markdown("#### Confusion Matrix")
-    fig, ax = plt.subplots()
-    display = ConfusionMatrixDisplay(
-        confusion_matrix=score["confusion_matrix"],
-        display_labels=["Class 0", "Class 1"]
-    )
-    display.plot(ax=ax, colorbar=False)
-    st.pyplot(fig, use_container_width=True)
-    plt.close(fig)
+        import seaborn as sns
+        fig, ax = plt.subplots(figsize=(5, 4))
+        sns.heatmap(
+            score["confusion_matrix"], 
+            annot=True, 
+            fmt="d", 
+            cmap="Blues", 
+            xticklabels=["Class 0", "Class 1"], 
+            yticklabels=["Class 0", "Class 1"],
+            ax=ax,
+            cbar=False
+        )
+        plt.ylabel('Actual')
+        plt.xlabel('Predicted')
+        
+        st.pyplot(fig, use_container_width=True)
+        plt.close(fig)
+
 
     comparison = pd.DataFrame([
         {
