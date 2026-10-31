@@ -1,0 +1,39 @@
+{
+  "best_model": "Random Forest",
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.8,
+      "precision": 0.6153846153846154,
+      "recall": 1.0,
+      "f1_score": 0.7619047619047619,
+      "roc_auc": 0.9558823529411764,
+      "confusion_matrix": [
+        [
+          12,
+          5
+        ],
+        [
+          0,
+          8
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.96,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          17,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ]
+    }
+  }
+}
