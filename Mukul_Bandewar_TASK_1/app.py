@@ -239,4 +239,4 @@ with data_tab:
     )
 
 st.divider()
-st.caption("Built with Python · Scikit-learn · Pandas · Streamlit")
+st.caption(" Developer by Mukul Bandewar - Built with Python · Scikit-learn · Pandas · Streamlit")
