@@ -72,8 +72,7 @@ def load_metrics():
 st.title("💳 CreditScore AI")
 st.caption("Machine Learning Creditworthiness Prediction")
 st.info(
-    "Educational project only. Predictions are not official "
-    "credit scores or real lending decisions."
+    
 )
 
 if not MODEL_PATH.exists() or not METRICS_PATH.exists():
