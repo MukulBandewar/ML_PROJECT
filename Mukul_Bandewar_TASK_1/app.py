@@ -70,9 +70,9 @@ def load_metrics():
         return json.load(f)
 
 st.title("💳 CreditScore AI")
-st.caption("Machine Learning Creditworthiness Prediction")
+st.caption("Machine Learning Credit worthiness Prediction")
 st.info(
-    
+    "ML PREDICATION BASED ON CSV DATA. DATA MAY BE CORRECT OR NOT " 
 )
 
 if not MODEL_PATH.exists() or not METRICS_PATH.exists():
